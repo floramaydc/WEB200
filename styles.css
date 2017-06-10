@@ -1,0 +1,239 @@
+html, body {
+    margin:0;
+    text-align: center;
+    background-color: darkgreen;
+    font-size: 100%;
+}
+
+section {
+    text-align: justify;
+    width: 60%;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+aside {
+    text-align: left;
+    width: 30%;
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* DIV */
+.wrapper {
+    width: 100%;
+    background-color:transparent;
+    height:auto;
+    overflow: hidden;
+    text-align: center;
+}
+.main-container {
+    position: absolute;
+    top: 300px;
+    background-color: transparent;
+}
+.containers {
+    width: 85%;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    background-color: #fff;
+    opacity: 1.0;
+}
+#container1, #container2, #container3, #container4 {
+    width: 80%;
+    text-align: center;
+    display: inline-block;
+}
+#container1 {
+        background-color: darkgreen; 
+        height: 20%; 
+        opacity: 0.8; 
+        padding: 100px 0; 
+        border-top-right-radius: 20px; 
+        border-top-left-radius: 20px;
+}
+#container2 {
+        height: auto; 
+        vertical-align: middle; 
+        padding-top: 20px;
+}
+#container3 {
+        height: auto;
+}
+#container4 {
+        height: auto; 
+        background-color: mediumseagreen; 
+        opacity: 0.8;
+}
+.logo {/* Company Name */
+    width: 40%; 
+    float: left; 
+    top: 20px; 
+    position: absolute; 
+    z-index: 1;
+}
+.description {width: 50%; float: right; left: 50%; top: 100px; position: absolute; z-index: 1;} /* Company Description */
+.description h2 {font-size: 2.0em; color: darkgreen;}
+.navigation { 
+    background-color: #8cc63e; 
+    width: 38%; 
+    float: right; /* Navigation Position */
+    left: 58%; 
+    top: 20px; 
+    position: absolute;
+    z-index: 1; 
+    box-shadow: 1px 1px #fff;
+    border-radius: 20px;    
+} 
+
+.floating-box {
+    display: inline-block; width: 20%; height: auto; margin: 5px; border: 2px solid forestgreen; border-radius: 10px; background-color: #fff; padding: 5px; text-align: center;}
+
+.floating-box-b {
+    display: inline-block; width: 30%; height: auto; margin: 5px; border: 2px solid forestgreen; background-color: seagreen; padding: 5px; text-align: center;}
+.floating-box-b li {
+    list-style-type: none;
+    text-align: left;
+}
+
+/* IMAGE */
+img {max-width: 100%; max-height: 100%;} 
+.mySlides {width: 980px; border-radius: 30px; display: none;} /* Flexbox image size */
+.w3-content w3-section {display: inline-block; position: relative;}
+
+/* FONT */
+a:link, a:visited {text-decoration: none;}
+a:hover, a:active {color: yellowgreen;}
+#container1 h2{font-family: "Georgia"; font-size: 2.0em; color: #ffffff; text-shadow: 2px 1px #333333; font-style: italic;}
+.container1 a:link, a:visited {
+    background-color: yellowgreen; 
+    color: yellow; padding: 14px 25px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    border-radius: 10px; 
+    border: 1px solid yellow;}
+.container1 a:hover, a:active {background-color: #8cc63e;}
+.floating-box-b a:link, a:visited {color: #ffffff;}
+.floating-box-b a:hover, a:active {color: #ffffff;}
+.logo h1 a {font-size: 1.5em; color: darkgreen; text-shadow: 2px 1px #fff;}
+.subnav a {color: darkgreen; text-align: right;}
+aside li {list-style-type: none;}
+aside a {color: green;}
+
+/*Footer CSS */
+#footer {
+    width: 80%;
+    text-align: center;
+    display: inline-block;
+    background-color: green; 
+    height: 50px;
+    border-bottom-right-radius: 20px; 
+    border-bottom-left-radius: 20px;
+}
+
+/* Navigation */
+
+
+ /* Limegreen Nav */
+.topnav {
+    background-color: #8cc63e;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;     
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #c9ff00;
+    color: black;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+/* Close and Open topnav for small screens */
+.topnav .icon {
+    display: none;
+} 
+
+/*Subpages of Page 2*/
+
+.floating-box p{
+    font-size: 0.875em;
+}
+.floating-box a:link {
+    color: #333;
+    font-style: italic;
+    text-decoration: none;
+}
+/* Flexbox 
+.mySlides {display:inline-block;}
+.container-flexbox {display: inline-flex;}*/
+
+
+/* Responsive */
+/* TABLET */
+@media all and (min-width:481px) and (max-width:1279px){
+    /*.topnav.responsive {position: relative;}
+    .topnav.responsive .icon {position: absolute; right: 0; top: 0;}
+    .topnav.responsive a {float: none; display: block; text-align: left;}
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {float: right; display: block;}
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {float: right; display: block;}*/
+    .navigation {width: 100%; display: inline-block; left: 0px; position: absolute; top:90px; text-align: center; float: none;}
+    .topnav {text-align: center;}
+    .logo {position: absolute; left: 0px; display: inline-block; float: left; width: 100%; top:0px; }
+    .logo h1 a {color: #fff; font-size: 1.2em; text-shadow: 2px 1px #000;}
+    .description {position: absolute; left: 0px; display: inline-block; float: left; width: 100%; top: 50px; }
+    .description h2 {color: #fff; font-size: 1em;}
+    #container2, #container4, #footer {width: 120%; height: auto; position: relative;}
+    #container1 {padding-top: 20px; top: -160px; left: 0px; position: absolute; border-radius: 0px; width: 120%; height: 15%; background-color: transparent;}
+    #container1 h2{font-size: 1.7em; color: #fff;}
+    #container3 {width: 120%; height:450px; position: relative;}
+    #container4 ul li {text-align: center;}
+    img.mySlides {position: relative; max-width: 100%;}
+    img {width: 100%; display: inline-block; position: absolute; top: 120px; left: 0px;}
+    .wrapper, .main-container, .containers {max-width: 100%;}
+    .floating-box {width: 40%;}
+    .floating-box-b {width: 90%;}
+    .container-flex {position: absolute; top: 10px;}
+}
+/* PHONE */
+@media all and (max-width:480px){
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {position: absolute; right: 0; top: 0;}
+    .topnav.responsive a {float: none; display: block; text-align: left;}
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {float: right; display: block;}
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {float: right; display: block;}
+    .navigation {width: 100%; float: left; display: inline-block; left: 0px; position: absolute; top:100px;}
+    .logo {position: absolute; left: 0px; display: inline-block; float: left; width: 100%; top:0px; height: auto;}
+    .logo h1 a {color: #fff; font-size: 0.9em; text-shadow: 2px 1px #000;}
+    .description {position: absolute; left: 0px; display: inline-block; float: left; width: 100%; top: 50px; height: auto;}
+    .description h2 {color: #fff; font-size: 1em;}
+    #container2,#container4, #footer {width: 120%; height: auto; position: relative;}
+    #container1 {padding-top: 20px; top: -160px; left: 0px; position: absolute; border-radius: 0px; width: 120%; height: 13%; background-color: transparent;}
+    #container1 h2{font-size: 1.7em; color: #fff;}
+    #container3 {width: 120%; height: 250px; position: relative;}
+    img.mySlides {position: absolute; width:100%; top: 100px;}
+    img {max-width: 100%; display: inline-block; position: absolute; top: 120px; left: 0px;}
+    .wrapper, .main-container, .containers {max-width: 100%;}
+    .floating-box {width: 40%;}
+    .floating-box-b {width: 90%;}
+    .w3-content w3-section {position: relative;}
+    section {position: relative; width: 100%;}
+    aside {text-align: center; width: 100%;}
+}
