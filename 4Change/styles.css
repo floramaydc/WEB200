@@ -1,0 +1,163 @@
+html, body {
+    margin:0;
+    text-align: center;
+    background-color: darkgreen;
+    font-family: sans-serif;
+}
+
+/* DIV */
+
+.wrapper {
+    width: 100%;
+    background-color:transparent;
+    text-align: center;
+    height:auto;
+    overflow: hidden;
+}
+
+.containers { 
+    background-color: transparent; 
+    width: 100%;
+}
+
+#container-h /* for header */{}
+#container-h img {width: 1280px; height: auto;}
+#container-c /* for content */{}
+#container-f /* for footer */{}
+
+.pages {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
+
+.pages ul li {
+    list-style-type: none;
+    width: 90%;
+    text-align: center;
+    display: inline-block;
+}
+
+.pages li {
+    background-color: darkgreen;
+    opacity: 0.5;
+}
+
+#logo {width: 40%; float: left; top: 20px; position: absolute;} /* Company Name */
+#description {width: 50%; float: right; top: 20px; position: absolute;} /* Company Description */
+
+/* Pages */
+#page1 { height: 300px; }
+#page2 { height: 300px; }
+#page3 { height: 300px; }
+#page4 { height: 300px; }
+
+.after-box {
+    border:1px solid transparent;
+}
+/*#containerhp1 {
+    background-image: url(http://4changeintgrp.floramaydesigns.com/images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1280px;
+    height: 319px;
+}*/
+
+/*Footer CSS */
+footer {
+    clear:both;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Navigation */
+.navigation {
+    width: 50%;
+    float: right;
+}
+
+ /* Limegreen Nav */
+.topnav {
+    background-color: #8cc63e;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;     
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #c9ff00;
+    color: black;
+}
+
+/* Close and Open topnav for small screens */
+.topnav .icon {
+    display: none;
+} 
+
+
+
+
+/*Subpages of Page 2*/
+.floating-box {
+    display: inline-block;
+    float: left;
+    width: 23%;
+    height: auto;
+    margin: 5px;
+    border: 2px solid forestgreen;
+    border-radius: 10px;     
+    background-color: #fff;
+    opacity: none;
+    padding: 0px;
+    text-align: center;
+    left: 50%;
+}
+
+.floating-box p{
+    font-size: 14px;
+}
+.floating-box a:link {
+    color: #333;
+    font-style: italic;
+    text-decoration: none;
+}
+
+/* Font colors */
+
+a:link {
+    color: #fff;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .wrapper, #container, #containerhp1, .navigation, #pages, .description, .logo, .footer {width: 100%;}
+    #pages {text-align: center;}
+    .description, .logo {float: none;}
+    #containerhp1 {background-size: contain;}
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {float: right; display: block;}
+    .floating-box {width: 40%;}
+}
+
+@media screen and (max-width: 400px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {position: absolute; right: 0; top: 0;}
+    .topnav.responsive a {float: none; display: block; text-align: left;}
+    .wrapper, #container, #containerhp1, .navigation, #pages, .description, .logo, .footer {width: 100%;}
+    #pages {text-align: center;}
+    .description, .logo {float: none;}
+    #containerhp1 {background-size: contain;}
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {float: right; display: block;}
+    .floating-box {width: 30%;}
+}
